@@ -28,6 +28,12 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 " Initialize plugin system
 call plug#end()
 
+" Allow indentation using plugins
+filetype plugin indent on
+
+"Enable syntax highlighting
+syntax enable
+
 " Airline Setup
 set laststatus=2
 set encoding=utf-8

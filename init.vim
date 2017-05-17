@@ -9,20 +9,15 @@ set shiftwidth=4        " Indentation amount for < and > commands.
 
 set belloff=all         " No beeps.
 set modeline            " Enable modeline.
-set esckeys             " Cursor keys in insert mode.
 set smartindent
 
 set wrap
 set ignorecase
 set magic
 
-set mouse =             " Disable mouse
-
 set shortmess+=c        " Suppress some stuff for autocomplete.
 
 set tags=./tags;        " Single ctag file for the whole source.
-
-set autowriteall        " Automatically write content to file on action.
 
 set foldmethod=syntax   "Enable folding based on syntax.
 set nofoldenable        " Disable folding by default
@@ -54,7 +49,7 @@ colorscheme molokai
 set noshowmode                                  " Disable Mode showing in two places.
 let g:airline#extensions#tabline#enabled = 1    " Enable Airline
 let g:airline_powerline_fonts = 1               " Enable Powerline patched fonts
-let g:airline_theme = 'dark'
+let g:airline_theme = 'molokai'
 
 " Whitespace stuff
 autocmd BufWritePre * %s/\s\+$//e               " Remove trailing whitespace on save
